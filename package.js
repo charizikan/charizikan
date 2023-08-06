@@ -1,0 +1,30 @@
+{
+  "name": "cha",
+  "version": "0.2.1",
+  "description": "Make task chaining.",
+  "main": "./lib/cha.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chajs/cha.git"
+  },
+  "scripts": {
+    "build": "node ./test/build",
+    "expr": "node ./test/expr",
+    "test": "node ./test/build && node ./test/expr",
+    "debug": "node --debug-brk ./test/build"
+  },
+  "dependencies": {
+    "lodash": "~2.4.1"
+  },
+  "devDependencies": {
+    "task-combine": "^0.1.0",
+    "task-copy": "^0.1.1",
+    "task-glob": "^0.1.0",
+    "task-replace": "^0.1.0",
+    "task-request": "^0.1.0",
+    "task-uglifyjs": "^0.1.0",
+    "task-writer": "^0.1.0"
+  },
+  "author": "Yuanyan Cao",
+  "license": "ISC"
+}
